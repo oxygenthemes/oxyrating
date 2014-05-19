@@ -1,0 +1,226 @@
+/*!
+ *  Font Awesome 4.0.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../fonts/FontAwesome/fontawesome-webfont.eot?v=4.0.3');
+  src: url('../fonts/FontAwesome/fontawesome-webfont.eot?#iefix&v=4.0.3') format('embedded-opentype'),
+      url('../fonts/FontAwesome/fontawesome-webfont.woff?v=4.0.3') format('woff'), 
+      url('../fonts/FontAwesome/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),
+      url('../fonts/FontAwesome/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*! oxyRating - v0.1 - 2014-04-29
+* http://oxygenthemes.com/oxyrating
+* Copyright (c) 2014 OxygenThemes; Licensed MIT 
+*/
+
+.oxyrating,
+.oxyrating *{
+    padding: 0;
+    margin: 0;
+}
+.oxyrating{
+    list-style: none;
+    font: 0/0 a;
+}
+.oxyrating li{
+    display: inline-block;
+    vertical-align: middle;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+.oxyrating-reset,
+.oxyrating-unit{
+    cursor: pointer;
+}
+
+/* Animation */
+.oxyrating li{
+  animation: animationFrames linear 0.4s;
+  animation-iteration-count: 1;
+  -webkit-animation: animationFrames linear 0.4s;
+  -webkit-animation-iteration-count: 1;
+  -moz-animation: animationFrames linear 0.4s;
+  -moz-animation-iteration-count: 1;
+  -o-animation: animationFrames linear 0.4s;
+  -o-animation-iteration-count: 1;
+  -ms-animation: animationFrames linear 0.4s;
+  -ms-animation-iteration-count: 1;
+}
+
+@keyframes animationFrames{
+  0% {
+    left:0px;
+    top:0px;
+    opacity:0;
+    transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-moz-keyframes animationFrames{
+  0% {
+    left:0px;
+    top:0px;
+    opacity:0;
+    -moz-transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -moz-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-webkit-keyframes animationFrames {
+  0% {
+    left:0px;
+    top:0px;
+    opacity:0;
+    -webkit-transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -webkit-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-o-keyframes animationFrames {
+  0% {
+    left:0px;
+    top:0px;
+    opacity:0;
+    -o-transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -o-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+@-ms-keyframes animationFrames {
+  0% {
+    left:0px;
+    top:0px;
+    opacity:0;
+    -ms-transform:  rotate(0deg) scaleX(0) scaleY(0) ;
+  }
+  100% {
+    left:0px;
+    top:0px;
+    opacity:1;
+    -ms-transform:  rotate(0deg) scaleX(1) scaleY(1) ;
+  }
+}
+
+/* Half */
+.oxyrating.oxyrating-half .oxyrating-units .oxyrating-unit{
+    position: relative;
+    overflow: hidden;
+}
+.oxyrating.oxyrating-half .oxyrating-units .oxyrating-unit.oxyrating-even{
+    padding-left: 0;
+    width: auto;
+    z-index: 2;
+}
+.oxyrating.oxyrating-half .oxyrating-units .oxyrating-unit.oxyrating-odd{
+    z-index: 3;
+    padding-right: 0;
+}
+
+/* Disabled */
+.oxyrating-disabled .oxyrating-reset,
+.oxyrating-disabled .oxyrating-unit{
+    cursor: default;
+}
+
+/* Tooltip */
+.oxyrating-tooltip{
+    position: relative;
+}
+.oxyrating-tooltip:before{
+    display: inline-block;
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -4px;
+    border-style: solid;
+    border-color: transparent black transparent transparent;
+    border-width: 4px;
+    content: '';
+}
+
+/* Skin - Default */
+/* -------------------------------------------------------------------------- */
+
+.oxyrating-skin-default .oxyrating-reset,
+.oxyrating-skin-default .oxyrating-unit{
+    font: 24px/1 'FontAwesome';
+    color: #4a565f;
+}
+/* Reset Button */
+.oxyrating-skin-default .oxyrating-reset{
+    margin-right: 6px;
+}
+.oxyrating-skin-default .oxyrating-reset:before{
+    content: '\f05e';
+}
+/* Rating Unit */
+.oxyrating-skin-default .oxyrating-unit{
+    padding: 0 6px;
+}
+.oxyrating-skin-default .oxyrating-unit:before{
+    content: "\f005";
+}
+.oxyrating-skin-default .oxyrating-unit.oxyrating-active,
+.oxyrating-skin-default .oxyrating-unit.oxyrating-hover{
+    color: #21bbd7;
+}
+.oxyrating-skin-default.oxyrating-half .oxyrating-unit{
+    width: 0.46em;
+}
+/* Tooltip */
+.oxyrating-skin-default .oxyrating-tooltip{
+    margin-left: 13px;
+    width: 70px;
+    background-color: #4a565f;
+    color: #fff;
+    font: 12px/22px Arial;
+    text-align: center;
+}
+.oxyrating-skin-default .oxyrating-tooltip:before{
+    border-right-color: #4a565f;
+}
+/* Half */
+.oxyrating-skin-default.oxyrating-half .oxyrating-unit.oxyrating-even{
+    margin-left: -0.46em;
+}
+/* Disabled */
+.oxyrating-skin-default.oxyrating-disabled .oxyrating-reset,
+.oxyrating-skin-default.oxyrating-disabled .oxyrating-unit{
+    color: #92A2AF;
+}
+.oxyrating-skin-default.oxyrating-disabled .oxyrating-tooltip{
+    background-color: #92A2AF;
+}
+.oxyrating-skin-default.oxyrating-disabled .oxyrating-tooltip:before{
+    border-right-color: #92A2AF;
+}
+.oxyrating-skin-default.oxyrating-disabled .oxyrating-unit.oxyrating-active,
+.oxyrating-skin-default.oxyrating-disabled .oxyrating-unit.oxyrating-hover{
+    color: #7EDAEB;
+}

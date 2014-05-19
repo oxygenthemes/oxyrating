@@ -1,0 +1,65 @@
+/*! oxyRating - v0.1 - 2014-04-29
+* http://oxygenthemes.com/oxyrating
+* Copyright (c) 2014 OxygenThemes; Licensed MIT 
+*/
+
+/* Skin - Melody */
+/* -------------------------------------------------------------------------- */
+
+.oxyrating-skin-melody .oxyrating-reset,
+.oxyrating-skin-melody .oxyrating-unit{
+    font: 24px/1 'FontAwesome';
+    color: #4a4a4a;
+}
+/* Reset Button */
+.oxyrating-skin-melody .oxyrating-reset{
+    margin-right: 8px;
+}
+.oxyrating-skin-melody .oxyrating-reset:before{
+    content: '\f05e';
+}
+/* Rating Unit */
+.oxyrating-skin-melody .oxyrating-unit{
+    padding: 0 6px;
+}
+.oxyrating-skin-melody .oxyrating-unit:before{
+    content: "\f001";
+}
+.oxyrating-skin-melody .oxyrating-unit.oxyrating-active,
+.oxyrating-skin-melody .oxyrating-unit.oxyrating-hover{
+    color: #59ceff;
+}
+.oxyrating-skin-melody.oxyrating-half .oxyrating-unit{
+    width: 0.58em;
+}
+/* Tooltip */
+.oxyrating-skin-melody .oxyrating-tooltip{
+    margin-left: 16px;
+    width: 70px;
+    background-color: #34b0e4;
+    color: #fff;
+    font: 12px/22px Arial;
+    text-align: center;
+}
+.oxyrating-skin-melody .oxyrating-tooltip:before{
+    border-right-color: #34b0e4;
+}
+/* Half */
+.oxyrating-skin-melody.oxyrating-half .oxyrating-unit.oxyrating-even{
+    margin-left: -0.58em;
+}
+/* Disabled */
+.oxyrating-skin-melody.oxyrating-disabled .oxyrating-reset,
+.oxyrating-skin-melody.oxyrating-disabled .oxyrating-unit{
+    color: #A5A5A5;
+}
+.oxyrating-skin-melody.oxyrating-disabled .oxyrating-tooltip{
+    background-color: #8BD3F2;
+}
+.oxyrating-skin-melody.oxyrating-disabled .oxyrating-tooltip:before{
+    border-right-color: #8BD3F2;
+}
+.oxyrating-skin-melody.oxyrating-disabled .oxyrating-unit.oxyrating-active,
+.oxyrating-skin-melody.oxyrating-disabled .oxyrating-unit.oxyrating-hover{
+    color: #A4E3FF;
+}

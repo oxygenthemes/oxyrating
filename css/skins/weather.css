@@ -1,0 +1,66 @@
+/*! oxyRating - v0.1 - 2014-04-29
+* http://oxygenthemes.com/oxyrating
+* Copyright (c) 2014 OxygenThemes; Licensed MIT 
+*/
+
+/* Skin - Weather */
+/* -------------------------------------------------------------------------- */
+
+.oxyrating-skin-weather .oxyrating-reset,
+.oxyrating-skin-weather .oxyrating-unit{
+    font: 23px/1 'FontAwesome';
+    color: #9f9f9f;
+}
+/* Reset Button */
+.oxyrating-skin-weather .oxyrating-reset{
+    font-size: 24px;
+    margin-right: 6px;
+}
+.oxyrating-skin-weather .oxyrating-reset:before{
+    content: '\f05e';
+}
+/* Rating Unit */
+.oxyrating-skin-weather .oxyrating-unit{
+    padding: 0 6px 0 7px;
+}
+.oxyrating-skin-weather .oxyrating-unit:before{
+    content: "\f0e9";
+}
+.oxyrating-skin-weather .oxyrating-unit.oxyrating-active,
+.oxyrating-skin-weather .oxyrating-unit.oxyrating-hover{
+    color: #b050d6;
+}
+.oxyrating-skin-weather.oxyrating-half .oxyrating-unit{
+    width: 0.5em;
+}
+/* Tooltip */
+.oxyrating-skin-weather .oxyrating-tooltip{
+    margin-left: 13px;
+    width: 70px;
+    background-color: #ea519c;
+    color: #fff;
+    font: 12px/22px Arial;
+    text-align: center;
+}
+.oxyrating-skin-weather .oxyrating-tooltip:before{
+    border-right-color: #ea519c;
+}
+/* Half */
+.oxyrating-skin-weather.oxyrating-half .oxyrating-unit.oxyrating-even{
+    margin-left: -0.5em;
+}
+/* Disabled */
+.oxyrating-skin-weather.oxyrating-disabled .oxyrating-reset,
+.oxyrating-skin-weather.oxyrating-disabled .oxyrating-unit{
+    color: #CFCFCF;
+}
+.oxyrating-skin-weather.oxyrating-disabled .oxyrating-tooltip{
+    background-color: #F49DC8;
+}
+.oxyrating-skin-weather.oxyrating-disabled .oxyrating-tooltip:before{
+    border-right-color: #F49DC8;
+}
+.oxyrating-skin-weather.oxyrating-disabled .oxyrating-unit.oxyrating-active,
+.oxyrating-skin-weather.oxyrating-disabled .oxyrating-unit.oxyrating-hover{
+    color: #D49AEB;
+}

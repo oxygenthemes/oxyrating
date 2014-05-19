@@ -1,0 +1,4 @@
+oxyrating
+=========
+
+OxyRating jQuery Plugin
